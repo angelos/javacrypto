@@ -5,6 +5,6 @@ Supporting material for the JFall 2016 presentation "what every Java developer s
 
 Contains,
 
-- a simplified version of the [presentation](whateverydevelopershouldknowaboutcryptography_pres.pdf), (coming soon)
+- a simplified version of the [presentation](whateverydeveloperneedstoknowaboutcryptography_pres.pdf), (coming soon)
 - code examples in the [src](src) folder, for you to follow along with the the presentation,
-- a [cheat sheet](whateverydevelopershouldknowaboutcryptography.pdf) to impress your boss and colleagues.
+- a [cheat sheet](whateverydeveloperneedstoknowaboutcryptography.pdf) to impress your boss and colleagues.
