@@ -1,4 +1,4 @@
-package hashes;
+package crypto2.hashes2;
 
 import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;
@@ -16,7 +16,7 @@ public class SimpleHash {
             sha = MessageDigest.getInstance("SHA-256");
         }
         catch (NoSuchAlgorithmException e) {
-            // Won't happen for SHA. Mandatory hashing algorithms are,
+            // Won't happen. Mandatory hashing algorithms are,
             // - MD5
             // - SHA-1
             // - SHA-256
@@ -37,12 +37,12 @@ public class SimpleHash {
         sha.update(data[1]);
         byte[] finalHash = sha.digest();
         System.out.println(String.format("Final hash:\n  %s", DatatypeConverter.printHexBinary(finalHash)));
-
         // Note that the outputs are always of the same length: 64 hex characters, or 256 bits
 
         System.out.println("-----");
 
-        byte[][] smallData = new byte[][] {{0x00, 0x00, 0x00, 0x00}, {0x00, 0x00, 0x00, 0x01}};
+        byte[][] smallData = new byte[][] {{0x00, 0x00, 0x00, 0x00},
+                                           {0x00, 0x00, 0x00, 0x01}};
 
         sha.reset(); // These digests are heavy-weight objects, so they tend to stick around.
         // You can also feed data into the digest(byte[]) method. That's identical to calling update(byte[]), and then digest().
