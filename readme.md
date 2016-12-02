@@ -1,7 +1,7 @@
 ## What's this?
 Supporting material for the JFall 2016 presentation "what every Java developer should know about cryptography."
 
-(Will contain a link to the video presentation soon.)
+[![what every Java developer should know about cryptography.](video.jpg)](https://www.youtube.com/watch?v=NzaHjBsN_S4)
 
 Contains,
 
